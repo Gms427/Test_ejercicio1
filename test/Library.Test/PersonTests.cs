@@ -25,14 +25,14 @@ namespace Tests
         public void TestEmptyName()
         {
             this.person.Name = "";
-            Assert.IsEmpty(person.Name, "La clase Person permite nombres vacíos");
+            Assert.AreEqual("Gonzalo", this.person.Name, "La clase Person permite nombres vacíos");
         }
 
         [Test]
         public void TestEmptyID()
         {
             this.person.ID = "";
-            Assert.IsEmpty(person.ID, "La clase Person permite ID vacíos");
+            Assert.AreEqual("5.126.332-8", this.person.ID, "La clase Person permite ID vacíos");
         }
 
         [Test]
